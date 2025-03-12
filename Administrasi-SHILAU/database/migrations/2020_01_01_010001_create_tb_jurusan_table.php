@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tb_jurusan', function (Blueprint $table) {
             $table->integer('id_jurusan', true); // Primary key dengan auto-increment
-            $table->string('jurusan', 255);
+            $table->string('jurusan');
             $table->timestamps();
         });
     }
